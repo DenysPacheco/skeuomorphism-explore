@@ -1,0 +1,89 @@
+* {
+}
+
+.img-size-md {
+    width: 8rem;
+    height: 8rem;
+}
+
+.nav {
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.w-maxcontent {
+    width: max-content;
+}
+
+.mw-8 {
+    max-width: 80vw;
+}
+
+.box-undertext {
+    width: 16rem;
+}
+
+.dolar-content {
+    font-size: 3rem;
+}
+
+.deco-none {
+    box-shadow: none !important;
+    color: #90929f;
+}
+
+.input-username {
+    height: 1.15rem;
+    text-align: end;
+    height: 2.5rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-search {
+    width: 8rem;
+    height: 4rem;
+}
+
+.pfp-icon {
+    position: relative;
+    top: -6rem;
+    background: #f2f3f7;
+    border-radius: 4rem;
+    border: 2px solid #888a98;
+}
+
+.main-content {
+    margin-top: 7rem;
+}
+
+.username-info {
+    position: relative;
+    top: -6rem;
+}
+
+.no-size {
+    width: 10rem;
+    height: 10rem;
+}
+
+.user-pfp-position {
+    top: 1rem;
+}
+
+nav ul {
+    height: 200px;
+    width: 18%;
+    padding-left: 1rem !important;
+}
+nav ul {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.list-repos {
+    width: 18rem;
+    list-style: none;
+}
