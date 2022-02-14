@@ -12,4 +12,6 @@ This is nothing more than my attempt to use this css lib exploring a little from
 
 ---
 
-You can check a little functionality typing you github username in the search bar to see your repo's 😉.
+[GitHub Page](https://denyspacheco.github.io/skeuomorphism-explore/)
+
+You can check a little functionality typing your github username in the search bar to see your repo's 😉.
