@@ -12,6 +12,6 @@ This is nothing more than my attempt to use this css lib exploring a little from
 
 ---
 
-[GitHub Page](https://denyspacheco.github.io/skeuomorphism-explore/)
+✨ [GitHub Page](https://denyspacheco.github.io/skeuomorphism-explore/) ✨
 
 You can check a little functionality typing your github username in the search bar to see your repo's 😉.
