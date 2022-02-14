@@ -16,6 +16,10 @@
     width: max-content;
 }
 
+.w-page {
+    width: 474px;
+}
+
 .mw-8 {
     max-width: 80vw;
 }
@@ -50,6 +54,7 @@
 .pfp-icon {
     position: relative;
     top: -6rem;
+    /* left: 1rem; */
     background: #f2f3f7;
     border-radius: 4rem;
     border: 2px solid #888a98;
@@ -66,7 +71,7 @@
 
 .no-size {
     width: 10rem;
-    height: 10rem;
+    height: 8rem;
 }
 
 .user-pfp-position {
@@ -86,4 +91,22 @@ nav ul {
 .list-repos {
     width: 18rem;
     list-style: none;
+    overflow: hidden;
+}
+
+/* #phrase::before {
+    content: '\"'
+}
+
+#phrase::after {
+    content: '\"'
+} */
+
+.git-phrase {
+    font-family: Laksaman;
+    font-size: 20px;
+}
+
+.f12 {
+    font-size: 12px;
 }

@@ -21,7 +21,7 @@
 
 
     <!-- Neuforism css -->
-    <link rel="stylesheet" href="/static/css/skeuos-css-master/css/skeuos.css">
+    <link rel="stylesheet" href="/static/css/skeuos-css-master/css/skeuos.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/style.css">
 
@@ -30,6 +30,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
+    <link rel="icon" href="https://docs.github.com/assets/images/site/favicon.png">
     <title>Skeuomorphism explore</title>
 </head>
 
@@ -43,26 +44,27 @@
             <h4 class="text-center mt-0">A modern approach to the classic.</h4>
         </header>
 
-        <div class="mw-80 w-maxcontent m-auto">
-            <div class="paper py-3">
-                <div class="d-flex">
-                    <input id="search-bar-input" class="form-control me-2" type="search" placeholder="Github Username"
-                        aria-label="Search">
-                    <button id="search-bar" class="h-25 m-auto d-flex" onclick="getProfile()">
-                        <i id="btn-search" class="bi-search fs-2 m-auto"></i>
-                        <span id="btn-spinner" class="spinner-border m-auto d-none" role="status"
-                            aria-hidden="true"></span>
-                    </button>
-                </div>
+        <div class="mw-80 w-page m-auto">
+            <!-- <div class="paper py-3"> -->
+            <div class="d-flex">
+                <input id="search-bar-input" class="form-control me-2" type="search" placeholder="Github Username"
+                    aria-label="Search">
+                <button id="search-bar" class="h-25 m-auto d-flex" onclick="getProfile()">
+                    <i id="btn-search" class="bi-search fs-2 m-auto"></i>
+                    <span id="btn-spinner" class="spinner-border m-auto d-none" role="status" aria-hidden="true"></span>
+                </button>
             </div>
+            <!-- </div> -->
 
 
             <div class="paper main-content">
                 <div class="m-auto position-relative">
                     <div class="user-pfp-position m-auto fs-4 fw-normal position-relative d-grid justify-content-center no-size"
                         for="name">
-                        <img id="profile-image" class="img-size-md pfp-icon m-auto" src="/static/images/githubpfp.png"
-                            alt="">
+                        <a id="pfp-link" class="d-grid" href="https://github.com/">
+                            <img id="profile-image" class="img-size-md pfp-icon m-auto align-self-center"
+                                src="/static/images/githubpfp.png">
+                        </a>
                         <div class="text-center username-info">
                             <div class="text-capitalize"><a id="username" href="https://github.com/">Username</a>
                             </div>
@@ -72,35 +74,44 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center my-2">
+                        <i class="fas fa-quote-left fa-2xs f12"></i>
+                        <span id="phrase" class="git-phrase">
+                            random zen phrase
+                        </span>
+                        <!-- <span id="phrase-spinner" class="spinner-grow m-auto d-none" role="status"
+                            aria-hidden="true"></span> -->
+                        <i class="fas fa-quote-right fa-2xs f12"></i>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-between p-3">
                     <div class="d-flex flex-column justify-content-around pe-5">
 
-                        <header>Repositories</header>
+                        <header class="">Repositories</header>
                         <nav>
+                            <span id="list-spinner" class="spinner-grow m-4 d-none" role="status"
+                                aria-hidden="true"></span>
                             <ul id="list-repos" class="list-repos">
                                 <!-- <li><i class="fas fa-folder me-3"></i><a href="google.com">Repo 1</a></li> -->
-                                <span id="list-spinner" class="spinner-grow m-auto d-none" role="status"
-                                    aria-hidden="true"></span>
                             </ul>
                         </nav>
 
                     </div>
                     <form class="justify-content-end">
                         <div class="d-flex flex-column">
-                            <button class="p-2 my-2 w-auto">
+                            <button class="p-2 my-2 w-auto" disabled>
                                 <div class="d-flex text-center p-2 text-success">
                                     <i class="fas fa-plus-circle fa-2x"></i>
                                     <div class="ms-2 ps-2 m-auto fs-4">Add</div>
                                 </div>
                             </button>
-                            <button class="p-2 my-2 w-auto">
+                            <button class="p-2 my-2 w-auto" disabled>
                                 <div class="d-flex text-center p-2 text-primary">
                                     <i class="fas fa-tags fa-2x"></i>
                                     <div class="ms-2 ps-2 m-auto fs-4">Tag it</div>
                                 </div>
                             </button>
-                            <button class="p-2 my-2 w-auto">
+                            <button class="p-2 my-2 w-auto" disabled>
                                 <div class="d-flex text-center p-2 text-danger">
                                     <i class="fas fa-trash fa-2x"></i>
                                     <div class="ms-2 ps-2 m-auto fs-4">Delete</div>
