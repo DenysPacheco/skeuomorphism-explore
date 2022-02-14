@@ -106,6 +106,7 @@ function DOMChangeUsername(username) {
 
 function DOMChangeUserLink(usernameLink) {
     document.getElementById("username").setAttribute("href", usernameLink);
+    document.getElementById("pfp-link").setAttribute("href", usernameLink);
 }
 
 function DOMToggleLoadingSpinner(id) {
