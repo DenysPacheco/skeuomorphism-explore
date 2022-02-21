@@ -2,3 +2,5 @@ json
 to.do
 static/packages
 pages
+todo.txt
+*.todo
